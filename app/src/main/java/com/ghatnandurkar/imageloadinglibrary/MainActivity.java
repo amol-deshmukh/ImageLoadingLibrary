@@ -24,6 +24,12 @@ public class MainActivity extends AppCompatActivity {
         list.add("https://www.gstatic.com/webp/gallery/3.jpg");
         list.add("https://www.gstatic.com/webp/gallery/4.jpg");
         list.add("https://www.gstatic.com/webp/gallery/5.jpg");
+        list.add("https://www.gstatic.com/webp/gallery/5.jpg");
+        list.add("https://www.gstatic.com/webp/gallery/5.jpg");
+        list.add("https://www.gstatic.com/webp/gallery/5.jpg");
+        list.add("https://www.gstatic.com/webp/gallery/5.jpg");
+
+
         recyclerView.setAdapter(new TestAdapter(list));
     }
 }

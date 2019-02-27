@@ -93,6 +93,7 @@ public class ImageManager {
 
         try {
             if (lruCache.get(new URL(imageTask.getUrl())) != null) {
+                imageTask.setBuffer(lruCache.get(new URL(imageTask.getUrl())));
                 decodePoolExecutor.execute(imageTask.getDecodeRunnable());
             } else {
                 downloadPoolExecutor.execute(imageTask.getDownloadRunnable());
